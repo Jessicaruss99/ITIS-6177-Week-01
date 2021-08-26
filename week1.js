@@ -9,3 +9,17 @@ var server = http.createServer(function (req, res){
 
 });
 server.listen(8080);
+
+//create a git ignore file
+//create a nodejs server using express
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) =>{
+res.send("Hello World 3");
+});
+
+app.listen(port, () =>{
+console.log(`Hello World listening at localhost:${port}`)
+});
